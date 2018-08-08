@@ -4,7 +4,7 @@
     <title></title>
 </head>
 <body>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <label id="hieu">abc</label>
     <script type="text/javascript" language="javascript">
     	auth();
     	function auth(){
@@ -14,7 +14,7 @@
                 {
                     if(xhttp.readyState == 4)
                     {   
-                        alert(xhttp.responseText);
+                        document.getElementById("hieu").innerHTML = xhttp.responseText;
                     }
                 };
                 xhttp.send();
